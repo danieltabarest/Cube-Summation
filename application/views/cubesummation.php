@@ -67,23 +67,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<div >
-		<h1>Cube Summation</h1>
-		<input name="btnProblem" type="button" id="btnProblem"  value="Problem Statement" onclick="problem()">
+		<h1>--------- Daniel Tabares - Cube Summation ----------</h1>
+		<table>
+		<tr>
+		<td>
+		<input name="btnProblem" type="button" id="btnProblem"  value="Problem" onclick="problem()">
+		</td>
+		<td>
 		<input name="btnInputFormat" type="button" id="btnInputFormat"  value="Input Format" onclick="inputformat()">
+		</td>
+		<td>
 		<input name="btnOutputFormat" type="button" id="btnOutputFormat"  value="Output Format" onclick="outputformat()">
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
 		<input name="btnConstrains" type="button" id="btnConstrains"  value="Constrains" onclick="constrains()">
+		</td>
+		<td>
 		<input name="btnInputSample" type="button" id="btnInputSample"  value="Sample Input" onclick="inputsample()">
+		</td>
+		<td>
 		<input name="btnOutputSample" type="button" id="btnOutputSample"  value="Sample Output" onclick="outputsample()">
+		</td>
+		<td>
 		<input name="btnExplanation" type="button" id="btnExplanation"  value="Explanation" onclick="explanation()">
-
-
+		</td>
+		</tr>
+		</table>
 	</div>
 		<br>
 	<div>
-		<form method="post" name="caseTest" id="caseTest" action="cubesummation/matrix">
-			<h2>Insert data:</h2>
+		<form method="post" name="caseTest" id="caseTest" action="../my-site/cubesummation/matrix/cubesummation.php">
+			<h2>Data test:</h2>
 			<textarea name="input" id="input" placeholder="Insert Sample" rows="20" cols="20"></textarea>
-			<input name="btnValidate" type="button" id="btnValidate"  value="Execute" onclick="validate()">
+			<table>
+			<tr>
+		<td>
+		<input name="btnValidate" type="button" id="btnValidate"  value="TEST" onclick="validate()">
+			</td>
+		</tr>
+		</table>
+			
 		</form>
 	</div>
 	</div>
